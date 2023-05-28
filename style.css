@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    font-family: 'Comic Neue', cursive;
+}
+.container {
+margin: 10px 100px;
+}
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 20px 20px;
+}
+.menu {
+    display: none;
+}
+.logo h2 {
+    font-size: 16px;
+    font-weight: 500;
+    font: 600;
+}
+.logo h2 span {
+    color: rgb(240, 139, 16);
+    text-decoration: underline;
+    font: 700;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 13px;
+}
+.navbar ul li {
+    list-style: none;
+}
+/* shows */
+.landing {
+    width: 100%;
+
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: bisque;
+    height: 75vh;
+}
+.doll img {
+    width: 400px;
+}
+.text-content h3 {
+text-transform: uppercase;
+letter-spacing: 5px;
+margin-bottom: 5px;
+font-size: 16px;
+font-weight: 400;
+}
+.text-content h1 {
+    font-weight: 400;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-bottom: 18px;
+}
+.text-content p {
+    margin-bottom: 15px;
+
+}
+.text-content .price {
+    font-size: 16px;
+    color: rgb(248, 85, 9);
+    margin-top: 15px;
+}
+.text-content .price span {
+    color: rgb(5, 4, 4);
+}
+.btn {
+    padding: 14px 32px;
+    border: 1px solid black;
+    background: transparent;
+    font-size: 18px;
+    border-radius: 30%;
+
+}
+/*text-content */
+.text-paragraph p {
+text-align: center;
+margin: 80px 100px;
+font-size: 12px;
+font-style: italic;
+line-height: 2;
+color: grey;
+}
+
+/*service*/
+.service {
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.service-component {
+    margin: 8px 8px;
+}
+.border-b {
+    border: 2.5px solid crimson;
+    width: 100px;
+    margin-bottom: 20px;
+}
+/*product*/
+.product .newest {
+    text-align: center;
+    margin-top: 150px;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.second {
+    margin: 10px auto;
+}
+.product_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.product_chair {
+    width: 300px;
+    height: 400px;
+    background: #d0d9d9;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+.product_image img {
+    width: 50px;
+zoom: 40%;
+    margin: 40x 0;
+
+}
+
+.product_chair h1{
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.prouct_chair h3 {
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.stars {
+    margin-top: 10px;
+
+
+}
+
+/* product section */
+
+
+.touch_container {
+    width: 100%;
+    height: auto;
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+}
+.touch_contents h1 {
+    font-size: 32px;
+    text-decoration: underline;
+    text-transform: uppercase;
+
+}
+
+.touch_contents p {
+font-size: 14px;
+margin: 12px 0;
+color:grey
+}
+
+.touch_image img {
+width: 250px;
+padding: 20px;
+}
+
+/*subscribe*/ 
+
+.subscribe {
+    margin-bottom: 120px;
+
+}
+.subscribe_input {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+
+}
+
+.subscribe_input input {
+    padding: 8px 28px;
+
+}
+.sub_btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+/*footer*/
+
+.footer {
+    width: 100%;
+    background: gray;
+}
+
+.footer_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 100px;
+    padding: 50px;
+}
+
+.logo p {
+    margin-top: 30px;
+}
+
+.list .border-b {
+    margin-bottom: 20px;
+
+}
+
+.list ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.list h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+.container {
+margin: 10px 50px;
+}
+.navbar ul {
+display: none;
+}
+.menu {
+    display: block;
+}
+.wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: auto;
+    padding: 20px;
+}
+
+.text-content h1 {
+    font-size: 32px;
+}
+
+.chair img {
+    width: 350px;
+}
+
+.text-paragraph {
+    margin: 80px 20px;
+}
+
+.service {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+}
+
+.service_components h1 {
+    font-size: 36px;
+
+}
+.service_components h3 {
+    font-size: 20px;
+}
+.service_components p {
+    font-size: 16px;
+}
+    
+.product_container {
+flex-direction: column;
+gap: 80px;
+}
+
+.touch_container {
+    padding: 20px;
+
+}
+.touch_image {
+    display: none;
+
+}
+
+.footer_container {
+margin: 10px 40px;
+gap: 50px;
+align-items: center;
+}
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px 30px;
+    }
+    .chair img {
+        width: 300px;
+
+    }
+    .text-content h1 {
+        font-size: 28px;
+    }
+    .touch_content p {
+font-size: 20px;
+    }
+}
